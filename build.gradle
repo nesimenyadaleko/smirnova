@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'pmd'
 }
 
 repositories {
@@ -7,4 +8,9 @@ repositories {
 }
 
 dependencies {
+}
+
+pmd {
+    consoleOutput = true
+    toolVersion = "6.39.0"
 }
